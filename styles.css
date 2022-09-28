@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root {
-  --primary-color: #483efe;
+  --primary-color: #6158ff;
   --secondary-color: #0a00d2;
-  --off-white: #f2f2f2;
+  --off-white: #fdcfcf;
   --dark-gray: #6b7280;
 }
 
@@ -15,10 +15,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+                       
 html {
   scroll-behavior: smooth;
 }
@@ -29,34 +31,70 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 1rem, 3rem;
-  background-color: var(--primary-color);
+  /* background: linear-gradient(to right, red, blue); */
+ background-color: blue;
+  box-shadow: 4px 4px 5px #333;
+  z-index: 1
+  /* border-bottom-left-radius: 10rem; */
+  /* border-bottom-right-radius: 10rem; */
+  /* height: 200px; */
 }
+
 .nav-heading {
   font-size: 2rem;
   margin: 0;
   font-weight: bold;
+  margin: 1.5rem;
 }
 
 .nav-links {
   padding-left: 2rem;
+  margin: 1.5rem;
 }
 
 .nav-links .link{
   font-size: 1.3rem;
   padding: 0.3rem 1rem;
 }
+
 .link-active {
   background-color: var(--secondary-color);
   border-radius: 0.5rem;
 }
+
 main {
   text-align: center;
+}
+.tech-heading {
+  margin: 1rem;
+  border: 0.1rem solid black;
+  color: black;
+  font-weight: bold;
+  padding: 0.2rem;
+  background-color: yellow;
+}
+.projects-heading {
+  margin: 1rem;
+  border: 0.1rem solid black;
+  color: black;
+  font-weight: bold;
+  padding: 0.2rem;
+  background-color: yellow;
+}
+.blogs-heading {
+  margin: 1rem;
+  border: 0.1rem solid black;
+  color: black;
+  font-weight: bold;
+  padding: 0.2rem;
+  background-color: yellow;
 }
 .hero-image {
   max-width: 80%;
   width: 350px;
   padding: 1rem 0;
 }
+
 .technology-images {
   display: flex;
   justify-content: center;
@@ -82,9 +120,15 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 section:nth-child(odd) {
   background-color: var(--off-white);
+  /* background: linear-gradient(to right, rgb(247, 230, 238), rgb(194, 194, 253)); */
+  /* box-shadow: 1px 0.5px 1px 1px rgb(124, 119, 119); */
+  z-index: 1;
+  
 }
+
 .section-heading {
   font-size: 2rem;
   font-weight: 500;
@@ -98,10 +142,20 @@ section:nth-child(odd) {
   font-size: 1.1rem;
 }
 .section-link {
-  padding: 0.5rem 1.5rem;
-  background-color: var(--primary-color);
-  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+  /* background-color: var(--primary-color); */
+  /* background: linear-gradient(to right bottom, rgb(63, 63, 234), rgb(255, 37, 37)); */
+  /* background: linear-gradient(to right bottom, blue, red); */
+  background-color: blue;
+  border-radius: 0.3rem;
+
 }
+.section-link:hover{
+  /* translate: 2px; */
+  transform: translate(0, -2px);
+  /* box-shadow: black; */
+}
+
 
 
 /* Footer */
@@ -109,10 +163,19 @@ footer {
   display: flex;
   justify-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  /* background: linear-gradient(to right, blue, red); */
+  background-color: blue;
+
+  box-shadow: 6px 0 px 10px rgb(0, 0, 0);
+  z-index: 5;
   padding: 0.5rem;
   gap: 1.5rem;
-  margin-top: auto;;
+  height: 10rem;
+  margin-top: auto;
+  /* border-top-left-radius: 10rem;
+  border-top-left-radius: 10rem; */
+  
 }
 .social-icons {
   width: 2rem;
@@ -129,6 +192,7 @@ footer {
   justify-content: space-between;
   width: 30px;
   height: 22px;
+  margin-top: 1.2rem;
 }
 .toggle-button .bar {
   height: 3px;
@@ -161,6 +225,7 @@ footer {
   }
   .hero-heading .profession {
       text-decoration: underline 4px solid var(--primary-color);
+      
   }
   .section-heading {
       font-size: 1.8rem;

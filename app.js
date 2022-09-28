@@ -4,9 +4,9 @@ const windowSize = window.matchMedia('(max-width:425px)');
 
 function changeHeroHeadingText(windowSize) {
   if(windowSize.matches) {
-    heroHeading.innerHTML = 'Jatin 👇 <span class="profession break">Web Developer</span>';
+    heroHeading.innerHTML = 'Yash Rawat👇 <span class="profession break">Web Developer</span>';
   } else {
-    heroHeading.innerHTML = 'Jatin → <span class="profession">Web Developer</span>';
+    heroHeading.innerHTML = 'Yash Rawat → <span class="profession">Web Developer</span>';
   }
 }
 windowSize.addListener(changeHeroHeadingText);
